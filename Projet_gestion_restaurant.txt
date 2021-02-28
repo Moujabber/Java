@@ -1,0 +1,46 @@
+
+Différentes Classes à créer:
+
+- Client: nom, nb de personnes, date de réservation ( format jour et mois et année par défaut), plat, menu, addition, numéro_table
++ méthodes ( deux méthodes ,pour commander: - ajouter un menu 
+					  - ajouter un plat simple)
+la listes des plats ( ArrayList) +la liste des menus (ArrayList)
++ Méthode addition qui calcule le prix total que doit payer le client à la fin de son repas
+ToString de Client ==> pour afficher le résumé des plats commandés, avec l'addition finale.
+
+ un client peut commander des plats et/ou des menus (éventuellement plusieurs fois le même). Un client peut
+émettre une réclamation. A la fin, il peut demander l’addition qui calcule la somme qu’il doit
+payer à l’établissement. Attention : considérez qu’ “un” client correspond en réalité à plusieurs
+personnes installées à une même table (par exemple M. Kashlusthin et son épouse).
+
+
+
+
+- Plat: type, nom, prix
++ méthode (la listes des plats ( ArrayList)) , promotion ( retourne la valeur vraie lorsqu’une promotion est en cours (la
+promotion par défaut pour tous les plats est de 20%)
+ToString => pour afficher les plats
+
+
+
+
+- Menu : plat,prix,
+
+- Restaurant( ici le main): nom, une adresse, un numero de tel, un numéro Siret 
+==> Créez plusieurs plats, dont un au moins avec une promotion, et 2 menus de votre choix. Créez enfin 2
+objets clients et faîtes-les commander un menu de votre choix. 
+==> la liste des menus (ArrayList)
++ méthode privée qui calcule prix qui se base sur le prix des plats. Le prix se met à jour automatiquement à chaque fois qu’on ajoute un plat au menu. 
+==> TOString => afficher la composition d un menu 
+- ClientCE :  hérite de la classe Client, montant de réduction (en euros), nb de pers 
+
+
+
+
+Faire plusieurs collections: - la liste des clients ( TreeSet)
+			     - la listes des plats ( ArrayList)
+	  		     - la liste des menus (ArrayList)
+
+
+
+
