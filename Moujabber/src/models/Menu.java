@@ -1,34 +1,25 @@
 package models;
 
+import java.util.ArrayList;
+
 public class Menu {
 
 	
-	private Plat plat;
+	ArrayList<Plat> plat;
 	
 	// ajout du constructeur 
 	public Menu(Plat plat) 
 	{
-		//super(nom,prenom);
-		this.plat=plat;
+	
+		this.plat = new ArrayList<>();
 	}
-
 	
+
+	// ArrayList plat 
 	
-	
-	
-	//get et set plat
-
-	public Plat getPlat() {
-		return plat;
-	}
-
-	public void setPlat(Plat plat) {
-		this.plat = plat;
-	}
-
-
-
-
+			public ArrayList<Plat>getListePlat(){
+				return this.plat; 
+			}
 
 	//@Override
 	//public String toString() {

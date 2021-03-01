@@ -1,26 +1,29 @@
 package models;
 
+
+
 public class Plat {
 
-	private String type;
+	private PlatEnum type;
 	private String nom_plat;
-	private int prix;
+	private float prix;
 	
 	// ajout du constructeur 
-	public Plat(String type, String nom_plat,int prix) 
+	public Plat(PlatEnum type, String nom_plat,float prix) 
 	{
 		
-		this.setType(type);
-		this.setNom_plat(nom_plat);
-		this.setPrix(prix) ;
+		this.type =type;
+		this.nom_plat=nom_plat;
+		this.prix=prix ;
+		
 	}
-	//get et set type
-	public String getType() {
-		return type;
-	}
+	public enum PlatEnum {
+		
+		ENTREE,
+		PLAT,
+		DESERT,
+		BOISSON;
 
-	public void setType(String type) {
-		this.type = type;
 	}
 	//get et set nom_plat
 	public String getNom_plat() {
@@ -30,17 +33,50 @@ public class Plat {
 	public void setNom_plat(String nom_plat) {
 		this.nom_plat = nom_plat;
 	}
-	//get et set prix
-	public int getPrix() {
-		return prix;
+	
+	
+	// get et set type
+	public PlatEnum getType() {
+		return type;
 	}
 
-	public void setPrix(int prix) {
-		this.prix = prix;
+	public void setType(PlatEnum type) {
+		this.type = type;
 	}
+
 	
 	
 	
+	
+		
+	// calcul de la promotion
+	//public static void main(String args[]){
+	//	int prix;
+	// System.out.println("");
+	//signe=Saisie.lire_int();
+	// if(signe==1)System.out.println("L'addition est de :",prix,"euros");
+	//
+	//}
+		
+	
+	// get et set prix
+		
+
+		public float getPrix() {
+			return prix;
+		}
+		public void setPrix(float prix) {
+			this.prix = prix;
+		}
+		// Afficher les plats
+		@Override
+		public String toString() {
+			return "Plat [nom_plat=" + nom_plat + "]";
+		}
+
+	
+
+		
 	
 	
 	

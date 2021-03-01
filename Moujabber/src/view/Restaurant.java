@@ -1,5 +1,9 @@
 package view;
 
+
+
+//import models.Plat;
+
 public class Restaurant {
 
 	
@@ -13,10 +17,10 @@ public class Restaurant {
 	public Restaurant(String nom_restaurant, String adresse_restaurant,int numero_tel,int numero_siret) 
 	{
 		
-		this.setNom_restaurant(nom_restaurant);
-		this.setAdresse_restaurant(adresse_restaurant);
-		this.setNumero_tel(numero_tel) ;
-		this.setNumero_tel(numero_siret) ;
+		this.nom_restaurant=nom_restaurant;
+		this.adresse_restaurant=adresse_restaurant;
+		this.numero_tel=numero_tel ;
+		this.numero_tel=numero_siret ;
 	}
 
 	//get et set nom_restaurant
@@ -65,12 +69,21 @@ public class Restaurant {
 	//			+ ", numero_tel=" + numero_tel + ", numero_siret=" + numero_siret + "]";
 	//}
 	
+	// main commence 
 	
 	
+//	public static void main(String[] args) {
+//		Plat plat1 = new Plat("Planquette de veau à la crème");
+//		System.out.println(plat1);
 	
+//		Plat plat2 = new Plat("Pâtes au saumon gratinées");
+//		System.out.println(plat2);
 	
-	
-	
+//		Client client1 = new Client ("oeufs durs,Planquette de veau à la crème, mousse au chocolat ",adition);
+//		System.out.println(client1);
+//		Client client2 = new Client ("salade césar, salade au surimi, saumon grillé aux légumes, Planquette de veau à la crème, crème brûlée, fondant au chocolat",adition);
+//		System.out.println(client2);
+//	}
 	
 	
 	
